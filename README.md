@@ -2,7 +2,7 @@
 
 Um painel romântico e responsivo feito para ela que se atualiza com informações úteis, APIs externas e conteúdo personalizado.
 
-## ✨ Funcionalidades Principais
+## Funcionalidades Principais
 
 * **Design Responsivo:** O layout é baseado em CSS Grid e Flexbox, adaptando-se perfeitamente a desktops, tablets e celulares.
 * **Tema Dark/Light:** Possui um seletor de tema (claro/escuro) que salva a preferência do usuário no `localStorage`.
@@ -15,7 +15,7 @@ Um painel romântico e responsivo feito para ela que se atualiza com informaçõ
     * **Foto Astronômica do Dia:** Mostra uma imagem e descrição de astronomia diferente para cada dia da semana.
 * **Previsão Astronômica:** Exibe os próximos eventos astronômicos, como chuvas de meteoros.
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 O núcleo deste projeto é o JavaScript (Vanilla) para manipulação do DOM e consumo de APIs.
 
@@ -27,7 +27,7 @@ O núcleo deste projeto é o JavaScript (Vanilla) para manipulação do DOM e co
 * **JavaScript (Vanilla / ES6+):**
     * Manipulação do DOM 
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 
@@ -38,7 +38,7 @@ O núcleo deste projeto é o JavaScript (Vanilla) para manipulação do DOM e co
 │ └── script.js  
 └── assets/ 
 └── icons/ 
-└── wedding-icon.png
+   └── wedding-icon.png
 ```
 
 ## 📄 Licença
