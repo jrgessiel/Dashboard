@@ -1,0 +1,516 @@
+/* ==========================================================================
+   1. CORE & ESTILOS GLOBAIS
+   ========================================================================== */
+@charset "UTF-8";
+
+:root {
+    /* Paleta de Cores */
+    --color-primary: #e8308c;
+    --color-bg-light: #fdf7f9;
+    --color-card-light: #ffffff;
+    --color-text-light: #181114;
+    --color-subtext-light: #886375;
+    --color-border-light: #f2e8ec;
+    --color-bg-dark: #1a0f14;
+    --color-card-dark: #24141b;
+    --color-text-dark: #f8f6f7;
+    --color-subtext-dark: #b08fa1;
+    --color-border-dark: #3c2330;
+
+    /* Tema Padrão (Claro) */
+    --bg: var(--color-bg-light);
+    --card: var(--color-card-light);
+    --text: var(--color-text-light);
+    --subtext: var(--color-subtext-light);
+    --border: var(--color-border-light);
+
+    /* Tipografia e Unidades */
+    --font-family-display: "Plus Jakarta Sans", sans-serif;
+    --border-radius-lg: 1.6rem;
+    --border-radius-xl: 2.4rem;
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --transition-fast: 0.2s ease;
+}
+
+body.dark-theme {
+    --bg: var(--color-bg-dark);
+    --card: var(--color-card-dark);
+    --text: var(--color-text-dark);
+    --subtext: var(--color-subtext-dark);
+    --border: var(--color-border-dark);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    /* 1rem = 10px */
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family-display);
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: var(--text);
+    background-color: var(--bg);
+    transition: background-color var(--transition-fast), color var(--transition-fast);
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ==========================================================================
+   2. LAYOUT & CONTAINER
+   ========================================================================== */
+
+.page-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 4rem 2rem;
+}
+
+.dashboard-wrapper {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* --- Cabeçalho --- */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 3.2rem;
+    padding: 0 1.6rem;
+}
+
+.header-title h1 {
+    font-size: 3.6rem;
+    font-weight: 800;
+    letter-spacing: -0.033em;
+    line-height: 1.2;
+    color: var(--text);
+}
+
+.header-title p {
+    font-size: 1.6rem;
+    color: var(--subtext);
+}
+
+/* --- Botão de Tema --- */
+.theme-toggle-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    padding: 1rem 1.6rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-sm);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.theme-toggle-btn:hover {
+    background-color: var(--bg);
+}
+
+/* ==========================================================================
+   3. GRID PRINCIPAL
+   ========================================================================== */
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2.4rem;
+    padding: 0 1.6rem;
+}
+
+.card--countdown {
+    grid-column: span 4;
+}
+
+.card--weather {
+    grid-column: span 6;
+}
+
+.card--nasa {
+    grid-column: span 12;
+}
+
+.card--list {
+    grid-column: span 6;
+}
+
+.card--quote {
+    grid-column: span 12;
+}
+
+/* ==========================================================================
+   4. COMPONENTES (CARDS)
+   ========================================================================== */
+
+.card {
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius-xl);
+    box-shadow: var(--shadow-sm);
+    padding: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    transition: all var(--transition-fast);
+}
+
+.card__header {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom: 1.6rem;
+    flex-shrink: 0;
+}
+
+.card__header .material-symbols-outlined {
+    font-size: 2.8rem;
+    color: var(--color-primary);
+}
+
+.card__header h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+/* --- Card: Countdown --- */
+.card--countdown {
+    align-items: center;
+    text-align: center;
+}
+
+.card--countdown .card__content {
+    margin-top: 1.6rem;
+}
+
+.countdown__days {
+    font-size: 6rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    line-height: 1.1;
+    min-height: 6.6rem;
+}
+
+.countdown__label {
+    font-size: 1.6rem;
+    color: var(--subtext);
+}
+
+/* --- Card: Weather --- */
+.card--weather {
+    justify-content: space-between;
+}
+
+.weather__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.weather__info h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.weather__info p {
+    color: var(--subtext);
+    min-height: 2.6rem;
+}
+
+.weather__temp {
+    font-size: 4.8rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    line-height: 1;
+}
+
+.weather__icon {
+    margin-top: 1.6rem;
+}
+
+.weather__icon .material-symbols-outlined {
+    font-size: 3.6rem;
+    color: var(--color-primary);
+}
+
+.weather__details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1.6rem;
+    margin-top: 2.4rem;
+    padding-top: 1.6rem;
+    border-top: 1px solid var(--border);
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.4rem;
+}
+
+.detail-item .material-symbols-outlined {
+    font-size: 2rem;
+    color: var(--color-primary);
+}
+
+.detail-info p {
+    font-weight: 700;
+    color: var(--text);
+}
+
+.detail-info span {
+    color: var(--subtext);
+}
+
+/* --- Card: NASA/Foto --- */
+.card--nasa {
+    flex-direction: column;
+    /* Mobile-first */
+    padding: 0;
+    overflow: hidden;
+}
+
+.nasa__image {
+    width: 100%;
+    object-fit: cover;
+    background-color: var(--border);
+    aspect-ratio: 16 / 9;
+}
+
+.nasa__content {
+    width: 100%;
+    padding: 2.4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.nasa__source {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.nasa__content h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-top: 0.4rem;
+}
+
+.nasa__content p {
+    font-size: 1.6rem;
+    color: var(--subtext);
+    margin-top: 0.8rem;
+}
+
+/* --- Card: List (Música & Astro) --- */
+.card--list {
+    justify-content: space-between;
+}
+
+.list-items {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.list-item img {
+    width: 6.4rem;
+    height: 6.4rem;
+    border-radius: var(--border-radius-lg);
+    object-fit: cover;
+    flex-shrink: 0;
+    background-color: var(--border);
+}
+
+.list-item__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-item__info p {
+    font-weight: 700;
+    color: var(--text);
+}
+
+.list-item__info span {
+    color: var(--subtext);
+    font-size: 1.4rem;
+}
+
+.list-items--divided {
+    gap: 1.6rem;
+}
+
+.list-items--divided .list-item {
+    padding-top: 1.6rem;
+    border-top: 1px solid var(--border);
+}
+
+.list-items--divided .list-item:first-child {
+    padding-top: 0;
+    border-top: none;
+}
+
+/* --- Card: Quote (Estrutura de 3 linhas) --- */
+.card--quote {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.card--quote .card__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quote__title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 0.8rem;
+}
+
+.quote__text {
+    font-size: 1.8rem;
+    font-style: italic;
+    color: var(--text);
+    min-height: 2.8rem;
+}
+
+.quote__author {
+    font-size: 1.6rem;
+    color: var(--subtext);
+    margin-top: 0.8rem;
+    font-style: normal;
+}
+
+/* ==========================================================================
+   5. RESPONSIVIDADE (Tablet & Mobile)
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+    .page-container {
+        padding: 2rem 1rem;
+    }
+
+    .dashboard-grid {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 2rem;
+        padding: 0;
+    }
+
+    .card--countdown {
+        grid-column: span 3;
+    }
+
+    .card--countdown:last-of-type {
+        grid-column: span 6;
+    }
+
+    .card--weather {
+        grid-column: span 3;
+    }
+
+    .card--nasa {
+        grid-column: span 6;
+    }
+
+    .card--list {
+        grid-column: span 3;
+    }
+
+    .card--quote {
+        grid-column: span 6;
+    }
+}
+
+/* CORREÇÃO PARA DESKTOP (1025px+) */
+@media (min-width: 1025px) {
+    .card--nasa {
+        flex-direction: row;
+        /* Layout lado a lado */
+        align-items: stretch;
+    }
+
+    .nasa__image {
+        width: 50%;
+        height: 20rem;
+        object-fit: cover;
+        aspect-ratio: auto;
+        border-radius: var(--border-radius-xl) 0 0 var(--border-radius-xl);
+    }
+
+    .nasa__content {
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .page-container {
+        padding: 1rem;
+    }
+
+    .dashboard-header {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+
+    .theme-toggle-btn {
+        width: 100%;
+    }
+
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+
+    .card--countdown,
+    .card--countdown:last-of-type,
+    .card--weather,
+    .card--nasa,
+    .card--list,
+    .card--quote {
+        grid-column: span 1;
+    }
+}

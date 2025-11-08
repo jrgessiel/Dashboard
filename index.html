@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso Cantinho</title>
+    <meta name="author" content="Gessiel Junior">
+    <meta name="description" content="Um painel romantico feito para ela.">
+
+    <link rel="icon" href="assets/icons/wedding-icon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="assets/icons/wedding-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <div class="page-container">
+        <div class="dashboard-wrapper">
+            
+            <header class="dashboard-header">
+                <div class="header-title">
+                    <h1>Nosso Cantinho</h1>
+                    <p>Sei que é você, porque se não for, não é mais ninguém</p>
+                </div>
+                <button class="theme-toggle-btn" id="theme-toggle" title="Mudar Tema">
+                    <span class="material-symbols-outlined">palette</span>
+                    Mudar Tema
+                </button>
+            </header>
+
+            <main class="dashboard-grid">
+
+                <article class="card card--countdown">
+                    <div class="card__header">
+                        <span class="material-symbols-outlined">cake</span>
+                        <h3>Seu Aniversário</h3>
+                    </div>
+                    <div class="card__content">
+                        <p class="countdown__days" id="aniv-laura">...</p>
+                        <p class="countdown__label">dias restantes</p>
+                    </div>
+                </article>
+
+                <article class="card card--countdown">
+                    <div class="card__header">
+                        <span class="material-symbols-outlined">cake</span>
+                        <h3>Meu Aniversário</h3>
+                    </div>
+                    <div class="card__content">
+                        <p class="countdown__days" id="aniv-gessiel">...</p>
+                        <p class="countdown__label">dias restantes</p>
+                    </div>
+                </article>
+
+                <article class="card card--countdown">
+                    <div class="card__header">
+                        <span class="material-symbols-outlined">celebration</span>
+                        <h3>Nosso Aniversário</h3>
+                    </div>
+                    <div class="card__content">
+                        <p class="countdown__days" id="aniv-casal">...</p>
+                        <p class="countdown__label">dias restantes</p>
+                    </div>
+                </article>
+
+                <article class="card card--weather">
+                    <div class="weather__main">
+                        <div class="weather__info">
+                            <h2>Belo Horizonte, MG</h2>
+                            <p id="weather-bh-desc">...</p>
+                        </div>
+                        <div class="weather__temp" id="weather-bh-temp">--°</div>
+                    </div>
+                    <div class="weather__icon">
+                        <span class="material-symbols-outlined" id="weather-bh-icon">cloud</span>
+                    </div>
+                    <div class="weather__details">
+                        <div class="detail-item">
+                            <span class="material-symbols-outlined">wb_sunny</span>
+                            <div class="detail-info">
+                                <p>Nascer do Sol</p>
+                                <span id="sunrise-bh">...</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <span class="material-symbols-outlined">nightlight</span>
+                            <div class="detail-info">
+                                <p>Pôr do Sol</p>
+                                <span id="sunset-bh">...</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <span class="material-symbols-outlined">nightlight_round</span>
+                            <div class="detail-info">
+                                <p>Fase da Lua</p>
+                                <span id="moon-phase-bh">...</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card card--weather">
+                    <div class="weather__main">
+                        <div class="weather__info">
+                            <h2>Bambuí, MG</h2>
+                            <p id="weather-bambui-desc">...</p>
+                        </div>
+                        <div class="weather__temp" id="weather-bambui-temp">--°</div>
+                    </div>
+                    <div class="weather__icon">
+                        <span class="material-symbols-outlined" id="weather-bambui-icon">cloud</span>
+                    </div>
+                    <div class="weather__details">
+                        <div class="detail-item">
+                            <span class="material-symbols-outlined">wb_sunny</span>
+                            <div class="detail-info">
+                                <p>Nascer do Sol</p>
+                                <span id="sunrise-bambui">...</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <span class="material-symbols-outlined">nightlight</span>
+                            <div class="detail-info">
+                                <p>Pôr do Sol</p>
+                                <span id="sunset-bambui">...</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <span class="material-symbols-outlined">nightlight_round</span>
+                            <div class="detail-info">
+                                <p>Fase da Lua</p>
+                                <span id="moon-phase-bambui">...</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card card--nasa">
+                    <img class="nasa__image" src="" alt="Carregando foto da NASA..." id="apod-img"/>
+                    <div class="nasa__content">
+                        <p class="nasa__source">Foto do dia </p>
+                        <h3 id="apod-title">...</h3>
+                        <p id="apod-desc">...</p>
+                    </div>
+                </article>
+
+                <article class="card card--list">
+                    <div class="card__header">
+                        <span class="material-symbols-outlined">music_note</span>
+                        <h3>Música da Semana</h3>
+                    </div>
+                    <div class="card__content">
+                        <ul class="list-items">
+                            <li class="list-item">
+                                <img src="" alt="..." id="music-art-1">
+                                <div class="list-item__info">
+                                    <p id="music-title-1">...</p>
+                                    <span id="music-artist-1">...</span>
+                                </div>
+                            </li>
+                            <li class="list-item">
+                                <img src="" alt="..." id="music-art-2">
+                                <div class="list-item__info">
+                                    <p id="music-title-2">...</p>
+                                    <span id="music-artist-2">...</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                
+                <article class="card card--list">
+                    <div class="card__header">
+                        <span class="material-symbols-outlined">flare</span>
+                        <h3>Previsão Astronômica</h3>
+                    </div>
+                    <div class="card__content">
+                        <ul class="list-items list-items--divided">
+                            <li class="list-item">
+                                <div class="list-item__info">
+                                    <p id="astro-event-1-title">...</p>
+                                    <span id="astro-event-1-desc">...</span>
+                                </div>
+                            </li>
+                            <li class="list-item">
+                                <div class="list-item__info">
+                                    <p id="astro-event-2-title">...</p>
+                                    <span id="astro-event-2-desc">...</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="card card--quote">
+                    <div class="card__content">
+                        <h3 class="quote__title" id="quote-title">Frase do Dia</h3>
+                        <blockquote class="quote__text" id="quote-text">O amor não se vê com os olhos, mas com o coração.</blockquote>
+                        <footer class="quote__author" id="quote-author">William Shakespeare</footer>
+                    </div>
+                </article>
+
+            </main>
+        </div>
+    </div>
+
+</body>
+</html>
