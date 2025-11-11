@@ -17,13 +17,11 @@
             casal: { month: 10, day: 5 }   // 05 de Novembro
         },
 
-        // ATUALIZADO: Músicas da semana
         MUSIC: [
-            { title: "Disfruto", artist: "Carla Morrison" },
-            { title: "Last First Kiss", artist: "Abe Parker" }
+            { title: "Patience", artist: "Low Roar" },
+            { title: "Longing", artist: "The last of us" }
         ],
 
-        // ATUALIZADO: 7 fotos com os seus links e descrições coerentes.
         STATIC_PHOTOS: [
             // Domingo (Índice 0)
             {
@@ -385,5 +383,6 @@
     };
 
     document.addEventListener('DOMContentLoaded', init);
+
 
 })();
