@@ -19,7 +19,7 @@
 
         MUSIC: [
             { title: "Patience", artist: "Low Roar" },
-            { title: "Longing", artist: "The last of us" }
+            { title: "Don't be so Serious", artist: "Low Roar" }
         ],
 
         STATIC_PHOTOS: [
@@ -386,3 +386,4 @@
 
 
 })();
+
