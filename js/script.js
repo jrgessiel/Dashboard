@@ -1,6 +1,5 @@
 /**
  * IIFE (Immediately Invoked Function Expression) para criar um escopo privado,
- * protegendo o escopo global e usando o "use strict" de forma segura.
  */
 (function () {
     "use-strict";
@@ -18,58 +17,58 @@
         },
 
         MUSIC: [
-            { title: "Patience", artist: "Low Roar" },
-            { title: "Don't be so Serious", artist: "Low Roar" }
+            { title: "Segunda feira flow de trem", artist: "Mano Hick" },
+            { title: "Se joga na minha vida", artist: "Henrique e Juliano" }
         ],
 
         STATIC_PHOTOS: [
-            // Domingo (Índice 0)
+            // Domingo (Índice 0) - Nebulosa de Carina
             {
                 url: 'https://apod.nasa.gov/apod/image/1812/CarinaNebulaGerminiani.jpg',
                 title: 'Nebulosa de Carina: O Berçário Cósmico',
-                desc: 'Uma das maiores maternidades de estrelas da nossa galáxia. Cada ponto de luz é uma estrela recém-nascida ou um pilar de poeira onde novas estrelas estão se formando.',
+                desc: 'Em meio a nuvens gigantescas e caóticas, novas luzes estão nascendo. Que ela te lembre que, mesmo quando a semana começa cheia de incertezas, é no meio do caos que a gente encontra força para brilhar.',
                 alt: 'Uma foto em cores vibrantes da Nebulosa de Carina, mostrando gases rosa e azuis.'
             },
-            // Segunda (Índice 1)
+            // Segunda (Índice 1) - Pilares da Criação
             {
                 url: 'https://t2.tudocdn.net/644161',
                 title: 'Os Pilares da Criação',
-                desc: 'Capturados pelo James Webb, estas são colunas gigantes de gás e poeira onde mundos e estrelas estão literalmente nascendo neste exato momento.',
+                desc: 'Colunas gigantescas que resistem bravamente à radiação, protegendo novas estrelas. Para sua segunda-feira, desejo a firmeza desses pilares. Mantenha sua base forte; você aguenta qualquer pressão.',
                 alt: 'Três colunas gigantes de gás e poeira marrom-alaranjada, com estrelas vermelhas nas pontas.'
             },
-            // Terça (Índice 2)
+            // Terça (Índice 2) - Nebulosa de Órion
             {
                 url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Orion_Nebula_-_Hubble_2006_mosaic_18000.jpg/960px-Orion_Nebula_-_Hubble_2006_mosaic_18000.jpg',
                 title: 'Nebulosa de Órion: A Vizinhança das Estrelas',
-                desc: 'O berçário de estrelas mais próximo de nós. É tão brilhante que pode ser visto a olho nu, uma prova da beleza caótica e constante da criação no universo.',
+                desc: 'O berçário de estrelas mais próximo de nós. É tão brilhante que pode ser visto a olho nu, uma prova de que coisas incríveis estão mais perto do que imaginamos.',
                 alt: 'Uma visão detalhada de nuvens de gás e poeira em tons de roxo, laranja e azul.'
             },
-            // Quarta (Índice 3)
+            // Quarta (Índice 3) - Quinteto de Stephan
             {
                 url: 'https://spacetoday.com.br/wp-content/uploads/2014/03/SQ-HST-Subaru-L.jpg',
                 title: 'Quinteto de Stephan: A Dança das Galáxias',
-                desc: 'Cinco galáxias em uma complexa dança cósmica. Quatro delas estão tão próximas que um dia irão se fundir, criando uma nova e gigantesca galáxia.',
+                desc: 'Cinco galáxias em uma dança cósmica. No meio da semana cansativa, fica essa imagem para lembrar que existe harmonia e beleza mesmo nas interações mais complexas.',
                 alt: 'Cinco galáxias próximas umas das outras.'
             },
-            // Quinta (Índice 4)
+            // Quinta (Índice 4) - Galáxia de Andrômeda
             {
                 url: 'https://olhardigital.com.br/wp-content/uploads/2024/09/unnamed-17.png',
-                title: 'Galáxia de Andrômeda - M31',
-                desc: 'A galáxia mais próxima da nossa. Mesmo a 2,5 milhões de anos-luz, ela e a Via Láctea estão se movendo uma em direção à outra, destinadas a um encontro cósmico.',
+                title: 'Galáxia de Andrômeda: M31',
+                desc: 'Nossa vizinha galáctica viajando pelo vácuo em nossa direção. Assim como meus pensamentos, que ignoram nossa distância e chega em você num instante para te desejar força.',
                 alt: 'A galáxia espiral de Andrômeda, mostrando seu núcleo brilhante.'
             },
-            // Sexta (Índice 5)
+            // Sexta (Índice 5) - Galáxia do Redemoinho
             {
                 url: 'https://img.odcdn.com.br/wp-content/uploads/2023/08/galaxia-M51.jpg',
-                title: 'Galáxia do Redemoinho - M51',
-                desc: 'Uma das galáxias mais fotogênicas, famosa por seus braços espirais perfeitos. É como olhar para um redemoinho cósmico, repleto de poeira e novas estrelas.',
+                title: 'Galáxia do Redemoinho: M51',
+                desc: 'Famosa por seus braços espirais perfeitos. Sexta-feira é dia de soltar o peso da semana, deixando a vida fluir como esse redemoinho cósmico.',
                 alt: 'Uma galáxia espiral com braços vermelhos e laranjas brilhantes.'
             },
-            // Sábado (Índice 6)
+            // Sábado (Índice 6) - Nebulosa do Anel
             {
                 url: 'https://tse2.mm.bing.net/th/id/OIP.pw-4AKODTy6zYS6sZ77OxwAAAA',
-                title: 'Nebulosa do Anel - M57',
-                desc: 'O belo fantasma de uma estrela que chegou ao fim. O que vemos é o gás brilhante que ela liberou, formando um anel perfeito no espaço.',
+                title: 'Nebulosa do Anel: M57',
+                desc: 'O belo final de um ciclo estelar que criou essa obra de arte. Hoje é dia de esquecer os números da contabilidade e apenas ser. Aproveite seu lugar no universo.',
                 alt: 'Uma nebulosa colorida em forma de anel ou rosquinha com uma estrela anã branca no centro.'
             }
         ],
@@ -102,28 +101,30 @@
             { name: 'Belo Horizonte', prefix: 'bh' },
             { name: 'Bambuí', prefix: 'bambui' }
         ],
+        
         QUOTES: [
-            // Domingo 
-            { quote: "O amor não se vê com os olhos, mas com o coração.", author: "William Shakespeare" },
+            // Domingo
+            { quote: "Diante da vastidão do tempo e da imensidão do universo, é um imenso prazer dividir um planeta e uma época com você.", author: "Carl Sagan" },
 
-            // Segunda 
-            { quote: "Diante da vastidão do tempo e da imensidão do universo, é um imenso prazer para mim dividir um planeta e uma época com você.", author: "Carl Sagan" },
+            // Segunda
+            { quote: "O sucesso é a soma de pequenos esforços repetidos dia após dia. Respire fundo, você dá conta.", author: "Robert Collier" },
 
-            // Terça 
-            { quote: "As coisas mais belas do mundo não podem ser vistas nem tocadas. Elas são sentidas com o coração.", author: "Antoine de Saint-Exupéry" },
+            // Terça
+            { quote: "Tente rir. Então, o que quer que te assuste irá embora. Um passo de cada vez na sua jornada.", author: "Meu Amigo Totoro (Studio Ghibli)" },
 
-            // Quarta 
-            { quote: "Que a gente saiba ser sol, mesmo quando a vida está nublada.", author: "Autor Desconhecido" },
+            // Quarta
+            { quote: "Não importa o quão devagar você vá, desde que você não pare. Sua dedicação nos estudos é admirável.", author: "Confúcio" },
 
-            // Quinta 
-            { quote: "Para estar junto não é preciso estar perto, e sim do lado de dentro.", author: "Autor Desconhecido" },
+            // Quinta
+            { quote: "As estrelas não têm medo de parecerem pirilampos. Mesmo longe, sua luz chega onde precisa chegar.", author: "Rabindranath Tagore" },
 
-            // Sexta 
-            { quote: "Há pessoas que entram na nossa vida e mudam o nosso mundo para sempre.", author: "Autor Desconhecido" },
+            // Sexta
+            { quote: "Às vezes, a força não é um fogo que arde, mas sim a brasa que resiste. Parabéns por vencer mais uma semana.", author: "Sabedoria Popular" },
 
-            // Sábado 
-            { quote: "Somos feitos de poeira de estrelas.", author: "Carl Sagan" }
+            // Sábado
+            { quote: "Até a lua precisa de fases para voltar a ser cheia. Respeite seu descanso hoje.", author: "Reflexão do Dia" }
         ],
+        
         TRANSLATIONS: {
             "New Moon": "Lua Nova", "Waxing Crescent": "Lua Crescente", "First Quarter": "Quarto Crescente",
             "Waxing Gibbous": "Gibosa Crescente", "Full Moon": "Lua Cheia", "Waning Gibbous": "Gibosa Minguante",
@@ -195,9 +196,6 @@
         }
     };
 
-    /**
-     * CORRIGIDO: Fallbacks apenas para as APIs que ainda usamos.
-     */
     const FALLBACKS = {
         MUSIC_ART: 'https://th.bing.com/th/id/OIP.a-f11vHnb_J2HeG2p_I-ogHaHa',
         WEATHER: '--'
@@ -369,13 +367,13 @@
     const init = () => {
         initializeTheme();
 
-        // Tarefas síncronas (executam imediatamente)
+        // Tarefas síncronas 
         updateCountdowns();
         updateWeeklyQuote();
         updateAstroForecast();
         updateStaticPhoto(); // Carrega a foto estática
 
-        // Tarefas assíncronas (buscam dados externos)
+        // Tarefas assíncronas 
         fetchiTunesArtwork(CONFIG.MUSIC[0], ELEMENTS.music[0]);
         fetchiTunesArtwork(CONFIG.MUSIC[1], ELEMENTS.music[1]);
         fetchWeather(CONFIG.CITIES[0].name, ELEMENTS.weather.bh);
@@ -386,4 +384,3 @@
 
 
 })();
-
