@@ -5,7 +5,7 @@
     "use-strict";
 
     // =========================================================================
-    // CONFIGURAÇÃO CENTRALIZADA
+    // CONFIGURAÇÃO CENTRALIZADA (ATUALIZADA)
     // =========================================================================
 
     const CONFIG = {
@@ -22,56 +22,56 @@
         ],
 
         STATIC_PHOTOS: [
-                // Domingo (Índice 0) - Galáxia de Andrômeda (M31)
-                {
-                    url: 'https://olhardigital.com.br/wp-content/uploads/2024/09/unnamed-17.png',
-                    title: 'Galáxia de Andrômeda: M31',
-                    desc: 'Em meio a nuvens gigantescas e caóticas, novas luzes estão nascendo. Que ela te lembre que, mesmo quando a semana começa cheia de incertezas, é no meio do caos que a gente encontra força para brilhar.',
-                    alt: 'A galáxia espiral de Andrômeda, mostrando seu núcleo brilhante.'
-                },
-                // Segunda (Índice 1) - Nebulosa do Anel (M57)
-                {
-                    url: 'https://tse2.mm.bing.net/th/id/OIP.pw-4AKODTy6zYS6sZ77OxwAAAA',
-                    title: 'Nebulosa do Anel: M57',
-                    desc: 'Colunas gigantescas que resistem bravamente à radiação, protegendo novas estrelas. Para sua segunda-feira, desejo a firmeza desses pilares. Mantenha sua base forte; você aguenta qualquer pressão.',
-                    alt: 'Uma nebulosa colorida em forma de anel ou rosquinha com uma estrela anã branca no centro.'
-                },
-                // Terça (Índice 2) - Pilares da Criação
-                {
-                    url: 'https://t2.tudocdn.net/644161',
-                    title: 'Os Pilares da Criação',
-                    desc: 'O berçário de estrelas mais próximo de nós. É tão brilhante que pode ser visto a olho nu, uma prova de que coisas incríveis estão mais perto do que imaginamos.',
-                    alt: 'Três colunas gigantes de gás e poeira marrom-alaranjada, com estrelas vermelhas nas pontas.'
-                },
-                // Quarta (Índice 3) - Nebulosa de Carina
-                {
-                    url: 'https://apod.nasa.gov/apod/image/1812/CarinaNebulaGerminiani.jpg',
-                    title: 'Nebulosa de Carina: O Berçário Cósmico',
-                    desc: 'Cinco galáxias em uma dança cósmica. No meio da semana cansativa, fica essa imagem para lembrar que existe harmonia e beleza mesmo nas interações mais complexas.',
-                    alt: 'Uma foto em cores vibrantes da Nebulosa de Carina, mostrando gases rosa e azuis.'
-                },
-                // Quinta (Índice 4) - Galáxia do Redemoinho (M51)
-                {
-                    url: 'https://img.odcdn.com.br/wp-content/uploads/2023/08/galaxia-M51.jpg',
-                    title: 'Galáxia do Redemoinho: M51',
-                    desc: 'Nossa vizinha galáctica viajando pelo vácuo em nossa direção. Assim como meus pensamentos, que ignoram nossa distância e chega em você num instante para te desejar força.',
-                    alt: 'Uma galáxia espiral com braços vermelhos e laranjas brilhantes.'
-                },
-                // Sexta (Índice 5) - Nebulosa de Órion
-                {
-                    url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Orion_Nebula_-_Hubble_2006_mosaic_18000.jpg/960px-Orion_Nebula_-_Hubble_2006_mosaic_18000.jpg',
-                    title: 'Nebulosa de Órion: A Vizinhança das Estrelas',
-                    desc: 'Famosa por seus braços espirais perfeitos. Sexta-feira é dia de soltar o peso da semana, deixando a vida fluir como esse redemoinho cósmico.',
-                    alt: 'Uma visão detalhada de nuvens de gás e poeira em tons de roxo, laranja e azul.'
-                },
-                // Sábado (Índice 6) - Quinteto de Stephan
-                {
-                    url: 'https://spacetoday.com.br/wp-content/uploads/2014/03/SQ-HST-Subaru-L.jpg',
-                    title: 'Quinteto de Stephan: A Dança das Galáxias',
-                    desc: 'O belo final de um ciclo estelar que criou essa obra de arte. Hoje é dia de esquecer os números da contabilidade e apenas ser. Aproveite seu lugar no universo.',
-                    alt: 'Cinco galáxias próximas umas das outras.'
-                }
-            ],
+                // Domingo (Índice 0) - Galáxia de Andrômeda (M31)
+                {
+                    url: 'https://olhardigital.com.br/wp-content/uploads/2024/09/unnamed-17.png',
+                    title: 'Galáxia de Andrômeda: M31',
+                    desc: 'Em meio a nuvens gigantescas e caóticas, novas luzes estão nascendo. Que ela te lembre que, mesmo quando a semana começa cheia de incertezas, é no meio do caos que a gente encontra força para brilhar.',
+                    alt: 'A galáxia espiral de Andrômeda, mostrando seu núcleo brilhante.'
+                },
+                // Segunda (Índice 1) - Nebulosa do Anel (M57)
+                {
+                    url: 'https://tse2.mm.bing.net/th/id/OIP.pw-4AKODTy6zYS6sZ77OxwAAAA',
+                    title: 'Nebulosa do Anel: M57',
+                    desc: 'Colunas gigantescas que resistem bravamente à radiação, protegendo novas estrelas. Para sua segunda-feira, desejo a firmeza desses pilares. Mantenha sua base forte; você aguenta qualquer pressão.',
+                    alt: 'Uma nebulosa colorida em forma de anel ou rosquinha com uma estrela anã branca no centro.'
+                },
+                // Terça (Índice 2) - Pilares da Criação
+                {
+                    url: 'https://t2.tudocdn.net/644161',
+                    title: 'Os Pilares da Criação',
+                    desc: 'O berçário de estrelas mais próximo de nós. É tão brilhante que pode ser visto a olho nu, uma prova de que coisas incríveis estão mais perto do que imaginamos.',
+                    alt: 'Três colunas gigantes de gás e poeira marrom-alaranjada, com estrelas vermelhas nas pontas.'
+                },
+                // Quarta (Índice 3) - Nebulosa de Carina
+                {
+                    url: 'https://apod.nasa.gov/apod/image/1812/CarinaNebulaGerminiani.jpg',
+                    title: 'Nebulosa de Carina: O Berçário Cósmico',
+                    desc: 'Cinco galáxias em uma dança cósmica. No meio da semana cansativa, fica essa imagem para lembrar que existe harmonia e beleza mesmo nas interações mais complexas.',
+                    alt: 'Uma foto em cores vibrantes da Nebulosa de Carina, mostrando gases rosa e azuis.'
+                },
+                // Quinta (Índice 4) - Galáxia do Redemoinho (M51)
+                {
+                    url: 'https://img.odcdn.com.br/wp-content/uploads/2023/08/galaxia-M51.jpg',
+                    title: 'Galáxia do Redemoinho: M51',
+                    desc: 'Nossa vizinha galáctica viajando pelo vácuo em nossa direção. Assim como meus pensamentos, que ignoram nossa distância e chega em você num instante para te desejar força.',
+                    alt: 'Uma galáxia espiral com braços vermelhos e laranjas brilhantes.'
+                },
+                // Sexta (Índice 5) - Nebulosa de Órion
+                {
+                    url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Orion_Nebula_-_Hubble_2006_mosaic_18000.jpg/960px-Orion_Nebula_-_Hubble_2006_mosaic_18000.jpg',
+                    title: 'Nebulosa de Órion: A Vizinhança das Estrelas',
+                    desc: 'Famosa por seus braços espirais perfeitos. Sexta-feira é dia de soltar o peso da semana, deixando a vida fluir como esse redemoinho cósmico.',
+                    alt: 'Uma visão detalhada de nuvens de gás e poeira em tons de roxo, laranja e azul.'
+                },
+                // Sábado (Índice 6) - Quinteto de Stephan
+                {
+                    url: 'https://spacetoday.com.br/wp-content/uploads/2014/03/SQ-HST-Subaru-L.jpg',
+                    title: 'Quinteto de Stephan: A Dança das Galáxias',
+                    desc: 'O belo final de um ciclo estelar que criou essa obra de arte. Hoje é dia de esquecer os números da contabilidade e apenas ser. Aproveite seu lugar no universo.',
+                    alt: 'Cinco galáxias próximas umas das outras.'
+                }
+            ],
 
         // Lista de eventos futuros para a Previsão Astronômica (Visíveis a olho nu de Minas Gerais)
         FORECAST_EVENTS: [
@@ -95,9 +95,10 @@
             }
         ],
 
+        // ATUALIZAÇÃO: Usando termos mais específicos para aumentar a precisão e estabilidade
         CITIES: [
-            { name: 'Belo Horizonte', prefix: 'bh' },
-            { name: 'Bambuí', prefix: 'bambui' }
+            { name: 'Belo Horizonte,MG', prefix: 'bh' }, // Termo mais específico
+            { name: 'Bambuí,MG', prefix: 'bambui' } // Termo mais específico
         ],
         
         QUOTES: [
@@ -131,7 +132,7 @@
     };
 
     // =========================================================================
-    // CACHE DE ELEMENTOS DO DOM
+    // CACHE DE ELEMENTOS DO DOM (Sem alteração)
     // =========================================================================
 
     const ELEMENTS = {
@@ -200,7 +201,7 @@
     };
 
     // =========================================================================
-    // HELPERS DE UI E UTILITÁRIOS
+    // HELPERS DE UI E UTILITÁRIOS (Sem alteração)
     // =========================================================================
 
     const ui = {
@@ -228,7 +229,7 @@
     const formatTime = (time) => time.replace(" AM", "").replace(" PM", "").padStart(5, '0');
 
     // =========================================================================
-    // LÓGICA DO DASHBOARD (SÍNCRONA)
+    // LÓGICA DO DASHBOARD (SÍNCRONA) (Sem alteração)
     // =========================================================================
 
     const calculateDaysRemaining = (targetDate) => {
@@ -293,7 +294,7 @@
     };
 
     // =========================================================================
-    // LÓGICA DE API (ASSÍNCRONA)
+    // LÓGICA DE API (ASSÍNCRONA) (ATUALIZADA)
     // =========================================================================
 
     const fetchiTunesArtwork = async (song, elementGroup) => {
@@ -318,21 +319,55 @@
         }
     };
 
+    /**
+     * ATUALIZADO: Inclui um timeout de 5 segundos para evitar requisições penduradas.
+     */
     const fetchWeather = async (city, elementGroup) => {
+        const timeout = 5000; // 5 segundos
+        const controller = new AbortController();
+        const id = setTimeout(() => controller.abort(), timeout); // Aborta após 5s
+        
         try {
-            const response = await fetch(`https://wttr.in/${encodeURIComponent(city)}?format=j1`);
-            if (!response.ok) throw new Error(`Falha ao buscar clima de ${city}`);
+            const encodedCity = encodeURIComponent(city);
+            const url = `https://wttr.in/${encodedCity}?format=j1`;
+            
+            // Passa o signal para o fetch, permitindo que o AbortController cancele a requisição
+            const response = await fetch(url, { signal: controller.signal });
+            
+            clearTimeout(id); // Limpa o timeout se a requisição for concluída
+            
+            if (!response.ok) {
+                // Se a resposta não for 2xx (por exemplo, 404, 500), trata como erro
+                throw new Error(`Resposta inválida (${response.status}) ao buscar clima de ${city}`);
+            }
+            
             const data = await response.json();
             const current = data.current_condition[0];
             const astronomy = data.weather[0].astronomy[0];
+
+            // Atualiza o DOM 
             ui.updateText(elementGroup.desc, current.lang_pt[0].value);
             ui.updateText(elementGroup.temp, `${current.temp_C}°`);
             ui.updateText(elementGroup.icon, getWeatherIcon(parseInt(current.weatherCode, 10)));
             ui.updateText(elementGroup.sunrise, formatTime(astronomy.sunrise));
             ui.updateText(elementGroup.sunset, formatTime(astronomy.sunset));
             ui.updateText(elementGroup.moon, CONFIG.TRANSLATIONS[astronomy.moon_phase] || astronomy.moon_phase);
+            
         } catch (error) {
-            console.error(`Erro no Clima (${city}):`, error);
+            clearTimeout(id); // Limpa o timeout em caso de erro
+
+            let errorMessage = `Erro desconhecido.`;
+
+            if (error.name === 'AbortError') {
+                errorMessage = `A requisição excedeu o tempo limite (${timeout / 1000}s).`;
+            } else if (error.message.includes('Resposta inválida')) {
+                errorMessage = error.message;
+            } else {
+                errorMessage = `Falha de rede/API: ${error.message}`;
+            }
+
+            console.error(`Erro no Clima (${city}):`, errorMessage);
+
             ui.updateText(elementGroup.desc, 'Indisponível');
             ui.updateText(elementGroup.temp, FALLBACKS.WEATHER);
             ui.updateText(elementGroup.icon, 'cloud_off');
@@ -340,7 +375,7 @@
     };
 
     // =========================================================================
-    // INICIALIZAÇÃO E TEMA
+    // INICIALIZAÇÃO E TEMA (Sem alteração)
     // =========================================================================
 
     const initializeTheme = () => {
@@ -369,17 +404,16 @@
         updateCountdowns();
         updateWeeklyQuote();
         updateAstroForecast();
-        updateStaticPhoto(); // Carrega a foto estática
+        updateStaticPhoto(); 
 
         // Tarefas assíncronas 
         fetchiTunesArtwork(CONFIG.MUSIC[0], ELEMENTS.music[0]);
         fetchiTunesArtwork(CONFIG.MUSIC[1], ELEMENTS.music[1]);
-        fetchWeather(CONFIG.CITIES[0].name, ELEMENTS.weather.bh);
-        fetchWeather(CONFIG.CITIES[1].name, ELEMENTS.weather.bambui);
+
+        fetchWeather(CONFIG.CITIES[0].name, ELEMENTS.weather.bh); // 'Belo Horizonte,MG'
+        fetchWeather(CONFIG.CITIES[1].name, ELEMENTS.weather.bambui); // 'Bambuí,MG'
     };
 
     document.addEventListener('DOMContentLoaded', init);
 
-
 })();
-
