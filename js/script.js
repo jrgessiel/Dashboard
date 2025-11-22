@@ -5,7 +5,7 @@
     "use-strict";
 
     // =========================================================================
-    // CONFIGURAÇÃO CENTRALIZADA (ATUALIZADA)
+    // CONFIGURAÇÃO CENTRALIZADA
     // =========================================================================
 
     const CONFIG = {
@@ -73,7 +73,6 @@
                 }
             ],
 
-        // Lista de eventos futuros para a Previsão Astronômica (Visíveis a olho nu de Minas Gerais)
         FORECAST_EVENTS: [
             // Dezembro 2025: Conjunção Planetária 
             {
@@ -95,10 +94,9 @@
             }
         ],
 
-        // ATUALIZAÇÃO: Usando termos mais específicos para aumentar a precisão e estabilidade
         CITIES: [
-            { name: 'Belo Horizonte,MG', prefix: 'bh' }, // Termo mais específico
-            { name: 'Bambuí,MG', prefix: 'bambui' } // Termo mais específico
+            { name: 'Belo Horizonte,MG', prefix: 'bh' },
+            { name: 'Bambuí,MG', prefix: 'bambui' }
         ],
         
         QUOTES: [
@@ -132,7 +130,7 @@
     };
 
     // =========================================================================
-    // CACHE DE ELEMENTOS DO DOM (Sem alteração)
+    // CACHE DE ELEMENTOS DO DOM
     // =========================================================================
 
     const ELEMENTS = {
@@ -201,7 +199,7 @@
     };
 
     // =========================================================================
-    // HELPERS DE UI E UTILITÁRIOS (Sem alteração)
+    // HELPERS DE UI E UTILITÁRIOS
     // =========================================================================
 
     const ui = {
@@ -229,7 +227,7 @@
     const formatTime = (time) => time.replace(" AM", "").replace(" PM", "").padStart(5, '0');
 
     // =========================================================================
-    // LÓGICA DO DASHBOARD (SÍNCRONA) (Sem alteração)
+    // LÓGICA DO DASHBOARD 
     // =========================================================================
 
     const calculateDaysRemaining = (targetDate) => {
@@ -294,7 +292,7 @@
     };
 
     // =========================================================================
-    // LÓGICA DE API (ASSÍNCRONA) (ATUALIZADA)
+    // LÓGICA DE API 
     // =========================================================================
 
     const fetchiTunesArtwork = async (song, elementGroup) => {
@@ -318,26 +316,22 @@
             ui.updateText(elementGroup.artist, song.artist);
         }
     };
-
-    /**
-     * ATUALIZADO: Inclui um timeout de 5 segundos para evitar requisições penduradas.
-     */
+    
     const fetchWeather = async (city, elementGroup) => {
-        const timeout = 5000; // 5 segundos
+        const timeout = 10000; // 10 segundos 
         const controller = new AbortController();
-        const id = setTimeout(() => controller.abort(), timeout); // Aborta após 5s
+        const id = setTimeout(() => controller.abort(), timeout); 
         
         try {
             const encodedCity = encodeURIComponent(city);
             const url = `https://wttr.in/${encodedCity}?format=j1`;
             
-            // Passa o signal para o fetch, permitindo que o AbortController cancele a requisição
             const response = await fetch(url, { signal: controller.signal });
             
-            clearTimeout(id); // Limpa o timeout se a requisição for concluída
+            clearTimeout(id); 
             
             if (!response.ok) {
-                // Se a resposta não for 2xx (por exemplo, 404, 500), trata como erro
+                // Se a resposta não for 2xx (ex: 404, 500, 429), trata como erro
                 throw new Error(`Resposta inválida (${response.status}) ao buscar clima de ${city}`);
             }
             
@@ -345,7 +339,7 @@
             const current = data.current_condition[0];
             const astronomy = data.weather[0].astronomy[0];
 
-            // Atualiza o DOM 
+            // Atualiza o DOM com sucesso
             ui.updateText(elementGroup.desc, current.lang_pt[0].value);
             ui.updateText(elementGroup.temp, `${current.temp_C}°`);
             ui.updateText(elementGroup.icon, getWeatherIcon(parseInt(current.weatherCode, 10)));
@@ -354,7 +348,7 @@
             ui.updateText(elementGroup.moon, CONFIG.TRANSLATIONS[astronomy.moon_phase] || astronomy.moon_phase);
             
         } catch (error) {
-            clearTimeout(id); // Limpa o timeout em caso de erro
+            clearTimeout(id); 
 
             let errorMessage = `Erro desconhecido.`;
 
@@ -368,6 +362,7 @@
 
             console.error(`Erro no Clima (${city}):`, errorMessage);
 
+            // Código de fallback para exibir "Indisponível"
             ui.updateText(elementGroup.desc, 'Indisponível');
             ui.updateText(elementGroup.temp, FALLBACKS.WEATHER);
             ui.updateText(elementGroup.icon, 'cloud_off');
@@ -375,7 +370,7 @@
     };
 
     // =========================================================================
-    // INICIALIZAÇÃO E TEMA (Sem alteração)
+    // INICIALIZAÇÃO E TEMA
     // =========================================================================
 
     const initializeTheme = () => {
@@ -410,8 +405,9 @@
         fetchiTunesArtwork(CONFIG.MUSIC[0], ELEMENTS.music[0]);
         fetchiTunesArtwork(CONFIG.MUSIC[1], ELEMENTS.music[1]);
 
-        fetchWeather(CONFIG.CITIES[0].name, ELEMENTS.weather.bh); // 'Belo Horizonte,MG'
-        fetchWeather(CONFIG.CITIES[1].name, ELEMENTS.weather.bambui); // 'Bambuí,MG'
+        // Chamadas de clima usando os nomes de cidade mais específicos
+        fetchWeather(CONFIG.CITIES[0].name, ELEMENTS.weather.bh); 
+        fetchWeather(CONFIG.CITIES[1].name, ELEMENTS.weather.bambui); 
     };
 
     document.addEventListener('DOMContentLoaded', init);
