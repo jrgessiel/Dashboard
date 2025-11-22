@@ -17,83 +17,81 @@
         },
 
         MUSIC: [
-            { title: "Segunda feira flow de trem", artist: "Mano Hick" },
-            { title: "Se joga na minha vida", artist: "Henrique e Juliano" }
+            { title: "Roulette", artist: "System of a down" },
+            { title: "Snuff", artist: "Corey Taylor" }
         ],
 
         STATIC_PHOTOS: [
-            // Domingo (Índice 0) - Nebulosa de Carina
-            {
-                url: 'https://apod.nasa.gov/apod/image/1812/CarinaNebulaGerminiani.jpg',
-                title: 'Nebulosa de Carina: O Berçário Cósmico',
-                desc: 'Em meio a nuvens gigantescas e caóticas, novas luzes estão nascendo. Que ela te lembre que, mesmo quando a semana começa cheia de incertezas, é no meio do caos que a gente encontra força para brilhar.',
-                alt: 'Uma foto em cores vibrantes da Nebulosa de Carina, mostrando gases rosa e azuis.'
-            },
-            // Segunda (Índice 1) - Pilares da Criação
-            {
-                url: 'https://t2.tudocdn.net/644161',
-                title: 'Os Pilares da Criação',
-                desc: 'Colunas gigantescas que resistem bravamente à radiação, protegendo novas estrelas. Para sua segunda-feira, desejo a firmeza desses pilares. Mantenha sua base forte; você aguenta qualquer pressão.',
-                alt: 'Três colunas gigantes de gás e poeira marrom-alaranjada, com estrelas vermelhas nas pontas.'
-            },
-            // Terça (Índice 2) - Nebulosa de Órion
-            {
-                url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Orion_Nebula_-_Hubble_2006_mosaic_18000.jpg/960px-Orion_Nebula_-_Hubble_2006_mosaic_18000.jpg',
-                title: 'Nebulosa de Órion: A Vizinhança das Estrelas',
-                desc: 'O berçário de estrelas mais próximo de nós. É tão brilhante que pode ser visto a olho nu, uma prova de que coisas incríveis estão mais perto do que imaginamos.',
-                alt: 'Uma visão detalhada de nuvens de gás e poeira em tons de roxo, laranja e azul.'
-            },
-            // Quarta (Índice 3) - Quinteto de Stephan
-            {
-                url: 'https://spacetoday.com.br/wp-content/uploads/2014/03/SQ-HST-Subaru-L.jpg',
-                title: 'Quinteto de Stephan: A Dança das Galáxias',
-                desc: 'Cinco galáxias em uma dança cósmica. No meio da semana cansativa, fica essa imagem para lembrar que existe harmonia e beleza mesmo nas interações mais complexas.',
-                alt: 'Cinco galáxias próximas umas das outras.'
-            },
-            // Quinta (Índice 4) - Galáxia de Andrômeda
-            {
-                url: 'https://olhardigital.com.br/wp-content/uploads/2024/09/unnamed-17.png',
-                title: 'Galáxia de Andrômeda: M31',
-                desc: 'Nossa vizinha galáctica viajando pelo vácuo em nossa direção. Assim como meus pensamentos, que ignoram nossa distância e chega em você num instante para te desejar força.',
-                alt: 'A galáxia espiral de Andrômeda, mostrando seu núcleo brilhante.'
-            },
-            // Sexta (Índice 5) - Galáxia do Redemoinho
-            {
-                url: 'https://img.odcdn.com.br/wp-content/uploads/2023/08/galaxia-M51.jpg',
-                title: 'Galáxia do Redemoinho: M51',
-                desc: 'Famosa por seus braços espirais perfeitos. Sexta-feira é dia de soltar o peso da semana, deixando a vida fluir como esse redemoinho cósmico.',
-                alt: 'Uma galáxia espiral com braços vermelhos e laranjas brilhantes.'
-            },
-            // Sábado (Índice 6) - Nebulosa do Anel
-            {
-                url: 'https://tse2.mm.bing.net/th/id/OIP.pw-4AKODTy6zYS6sZ77OxwAAAA',
-                title: 'Nebulosa do Anel: M57',
-                desc: 'O belo final de um ciclo estelar que criou essa obra de arte. Hoje é dia de esquecer os números da contabilidade e apenas ser. Aproveite seu lugar no universo.',
-                alt: 'Uma nebulosa colorida em forma de anel ou rosquinha com uma estrela anã branca no centro.'
-            }
-        ],
+                // Domingo (Índice 0) - Galáxia de Andrômeda (M31)
+                {
+                    url: 'https://olhardigital.com.br/wp-content/uploads/2024/09/unnamed-17.png',
+                    title: 'Galáxia de Andrômeda: M31',
+                    desc: 'Em meio a nuvens gigantescas e caóticas, novas luzes estão nascendo. Que ela te lembre que, mesmo quando a semana começa cheia de incertezas, é no meio do caos que a gente encontra força para brilhar.',
+                    alt: 'A galáxia espiral de Andrômeda, mostrando seu núcleo brilhante.'
+                },
+                // Segunda (Índice 1) - Nebulosa do Anel (M57)
+                {
+                    url: 'https://tse2.mm.bing.net/th/id/OIP.pw-4AKODTy6zYS6sZ77OxwAAAA',
+                    title: 'Nebulosa do Anel: M57',
+                    desc: 'Colunas gigantescas que resistem bravamente à radiação, protegendo novas estrelas. Para sua segunda-feira, desejo a firmeza desses pilares. Mantenha sua base forte; você aguenta qualquer pressão.',
+                    alt: 'Uma nebulosa colorida em forma de anel ou rosquinha com uma estrela anã branca no centro.'
+                },
+                // Terça (Índice 2) - Pilares da Criação
+                {
+                    url: 'https://t2.tudocdn.net/644161',
+                    title: 'Os Pilares da Criação',
+                    desc: 'O berçário de estrelas mais próximo de nós. É tão brilhante que pode ser visto a olho nu, uma prova de que coisas incríveis estão mais perto do que imaginamos.',
+                    alt: 'Três colunas gigantes de gás e poeira marrom-alaranjada, com estrelas vermelhas nas pontas.'
+                },
+                // Quarta (Índice 3) - Nebulosa de Carina
+                {
+                    url: 'https://apod.nasa.gov/apod/image/1812/CarinaNebulaGerminiani.jpg',
+                    title: 'Nebulosa de Carina: O Berçário Cósmico',
+                    desc: 'Cinco galáxias em uma dança cósmica. No meio da semana cansativa, fica essa imagem para lembrar que existe harmonia e beleza mesmo nas interações mais complexas.',
+                    alt: 'Uma foto em cores vibrantes da Nebulosa de Carina, mostrando gases rosa e azuis.'
+                },
+                // Quinta (Índice 4) - Galáxia do Redemoinho (M51)
+                {
+                    url: 'https://img.odcdn.com.br/wp-content/uploads/2023/08/galaxia-M51.jpg',
+                    title: 'Galáxia do Redemoinho: M51',
+                    desc: 'Nossa vizinha galáctica viajando pelo vácuo em nossa direção. Assim como meus pensamentos, que ignoram nossa distância e chega em você num instante para te desejar força.',
+                    alt: 'Uma galáxia espiral com braços vermelhos e laranjas brilhantes.'
+                },
+                // Sexta (Índice 5) - Nebulosa de Órion
+                {
+                    url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Orion_Nebula_-_Hubble_2006_mosaic_18000.jpg/960px-Orion_Nebula_-_Hubble_2006_mosaic_18000.jpg',
+                    title: 'Nebulosa de Órion: A Vizinhança das Estrelas',
+                    desc: 'Famosa por seus braços espirais perfeitos. Sexta-feira é dia de soltar o peso da semana, deixando a vida fluir como esse redemoinho cósmico.',
+                    alt: 'Uma visão detalhada de nuvens de gás e poeira em tons de roxo, laranja e azul.'
+                },
+                // Sábado (Índice 6) - Quinteto de Stephan
+                {
+                    url: 'https://spacetoday.com.br/wp-content/uploads/2014/03/SQ-HST-Subaru-L.jpg',
+                    title: 'Quinteto de Stephan: A Dança das Galáxias',
+                    desc: 'O belo final de um ciclo estelar que criou essa obra de arte. Hoje é dia de esquecer os números da contabilidade e apenas ser. Aproveite seu lugar no universo.',
+                    alt: 'Cinco galáxias próximas umas das outras.'
+                }
+            ],
 
-        // Lista de eventos futuros para a Previsão Astronômica
+        // Lista de eventos futuros para a Previsão Astronômica (Visíveis a olho nu de Minas Gerais)
         FORECAST_EVENTS: [
+            // Dezembro 2025: Conjunção Planetária 
             {
-                endDate: '2025-11-18',
-                title: 'Pico: Chuva de Meteoros Leônidas',
-                desc: 'Pico em 17-18 de Nov. Visível em todo o Brasil de madrugada.'
+                endDate: '2025-12-07',
+                title: 'Conjunção Brilhante: Vênus e Júpiter',
+                desc: 'Na manhã de 07/Dez. Os planetas se alinham antes do amanhecer.'
             },
+            // Dezembro 2025: Chuva de Meteoros 
             {
                 endDate: '2025-12-15',
-                title: 'Pico: Chuva de Meteoros Geminídeas',
-                desc: 'Pico em 14-15 de Dez. Uma das melhores chuvas do ano.'
+                title: 'Chuva de Meteoros Geminídeas',
+                desc: 'Na madrugada de 15/Dez. Uma das melhores chuvas do ano.'
             },
+            // Dezembro 2025: Chuva de Meteoros 
             {
                 endDate: '2025-12-23',
-                title: 'Pico: Chuva de Meteoros Úrsidas',
-                desc: 'Pico em 22-23 de Dez. Melhor visível próximo ao amanhecer.'
-            },
-            {
-                endDate: '2026-01-05',
-                title: 'Pico: Chuva de Meteoros Quadrântidas',
-                desc: 'Pico em 3-4 de Jan. Visível de madrugada.'
+                title: 'Chuva de Meteoros Úrsidas',
+                desc: 'Na madrugada de 23/Dez. Uma chuva de baixa intensidade.'
             }
         ],
 
@@ -104,25 +102,25 @@
         
         QUOTES: [
             // Domingo
-            { quote: "Diante da vastidão do tempo e da imensidão do universo, é um imenso prazer dividir um planeta e uma época com você.", author: "Carl Sagan" },
-
+            { quote: "Onde quer que você esteja, é onde eu quero estar. O resto é geografia.", author: "Taylor Swift" },
+            
             // Segunda
-            { quote: "O sucesso é a soma de pequenos esforços repetidos dia após dia. Respire fundo, você dá conta.", author: "Robert Collier" },
-
+            { quote: "Você não tem a menor chance de vencer a menos que lute.", author: "Attack On Titan" },
+            
             // Terça
-            { quote: "Tente rir. Então, o que quer que te assuste irá embora. Um passo de cada vez na sua jornada.", author: "Meu Amigo Totoro (Studio Ghibli)" },
-
+            { quote: "Às vezes, a vida não te dá o que você quer, não porque você não mereça, mas porque você merece muito mais.", author: "Os Padrinhos Mágicos" },
+            
             // Quarta
-            { quote: "Não importa o quão devagar você vá, desde que você não pare. Sua dedicação nos estudos é admirável.", author: "Confúcio" },
-
+            { quote: "Um pequeno passo pode ser o início de uma grande jornada.", author: "Stephen Hawking" },
+            
             // Quinta
-            { quote: "As estrelas não têm medo de parecerem pirilampos. Mesmo longe, sua luz chega onde precisa chegar.", author: "Rabindranath Tagore" },
-
+            { quote: "Se você escutar uma voz dentro de você dizendo pra você não pintar, então pinte, e essa voz será silenciada.", author: "Vincent Van Gogh" },
+            
             // Sexta
-            { quote: "Às vezes, a força não é um fogo que arde, mas sim a brasa que resiste. Parabéns por vencer mais uma semana.", author: "Sabedoria Popular" },
-
+            { quote: "O passado pode doer. Mas, do jeito que eu vejo, você pode fugir dele ou aprender com ele.", author: "O Rei Leão" },
+            
             // Sábado
-            { quote: "Até a lua precisa de fases para voltar a ser cheia. Respeite seu descanso hoje.", author: "Reflexão do Dia" }
+            { quote: "O que faz a distância ser tão difícil é o silêncio.", author: "Doctor Who" }
         ],
         
         TRANSLATIONS: {
@@ -384,3 +382,4 @@
 
 
 })();
+
